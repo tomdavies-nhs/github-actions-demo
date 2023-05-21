@@ -27,10 +27,14 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: echo "Hello to Jason Isaacs"
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          echo "Hello to David Morrissey..."
+          echo "... and hello to all the members of Fairport Convention"
+
+      # Runs dummy shell script
+      - name: Run a dummy shell script
+        run: bash scripts/dummy_script.sh one two three
