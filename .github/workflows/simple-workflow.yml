@@ -37,4 +37,4 @@ jobs:
 
       # Runs dummy shell script
       - name: Run a dummy shell script
-        run: bash scripts/dummy_script.sh one two three
+        run: bash ${GITHUB_WORKSPACE}/scripts/dummy_script.sh one two three
