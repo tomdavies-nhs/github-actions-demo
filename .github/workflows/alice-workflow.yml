@@ -22,5 +22,5 @@ jobs:
         run: echo "Hello Alice"
 
       # Runs shell script
-      - name: run-alice-script
-        run: bash ${GITHUB_WORKSPACE}/scripts/alice_script.sh
+      - name: run-bob-script
+        run: bash ${GITHUB_WORKSPACE}/bob_script.sh
