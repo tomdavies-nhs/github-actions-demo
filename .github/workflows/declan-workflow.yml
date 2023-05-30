@@ -1,10 +1,12 @@
-name: Alice
+name: Declan
 on:
-  push:
-    branches-ignore:
-      - main
-
   workflow_dispatch:
+    inputs:
+      env:
+        description: Which env?
+        default: dev
+        required: true
+        type: string
 
 jobs:
   # This workflow contains a single job called "build"
@@ -18,9 +20,5 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: greet-alice
-        run: echo "Hello Alice"
-
-      # Runs shell script
-      - name: run-alice-script
-        run: bash ${GITHUB_WORKSPACE}/scripts/alice_script.sh
+      - name: greet-declan
+        run: echo "Hi Dec - this is for the ${{ inputs.env }} env"
