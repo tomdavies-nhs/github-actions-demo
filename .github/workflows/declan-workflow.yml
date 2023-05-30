@@ -25,4 +25,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: greet-declan
-        run: echo "Hi Dec - this is for the ${{ inputs.env}} env"
+        run: echo "Hi Dec - this is for the ${{ inputs.env }} env"
