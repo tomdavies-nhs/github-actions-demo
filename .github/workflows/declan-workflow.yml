@@ -1,9 +1,5 @@
 name: Declan
 on:
-  push:
-    branches-ignore:
-      - main
-
   workflow_dispatch:
     inputs:
       env:
